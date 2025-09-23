@@ -1,0 +1,12 @@
+# PM/Doc untuk dokumen umum
+/docs/ @org/PMO-DocOps
+
+
+# Hardware
+/hardware/ @org/Hardware
+
+
+# Firmware & Software
+/firmware/ @org/Software
+/backend/ @org/Software
+/frontend/ @org/Software
