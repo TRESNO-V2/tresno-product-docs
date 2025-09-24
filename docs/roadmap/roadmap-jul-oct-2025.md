@@ -22,3 +22,5 @@
 | Field Test #2 (≥3 km) | ⬜️ | ⬜️ | 🟥 | ⬜️ | ⬜️ |
 | SOP v1 & pelatihan | ⬜️ | ⬜️ | 🟩 | 🟩 | 🟥 |
 | Deployment terbatas (pilot) | ⬜️ | ⬜️ | ⬜️ | 🟩 | 🟦 hand-off |
+
+<p align="center"><img src="../assets/roadmap.png" alt="roadmap" /></p>
