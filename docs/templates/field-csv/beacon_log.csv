@@ -1,0 +1,1 @@
+ts_epoch,node_id,role,lat,lon,alt,batt_v,seq,ttl,hop,route_id,rssi,snr,latency_ms_e2e,on_time,loss_flag

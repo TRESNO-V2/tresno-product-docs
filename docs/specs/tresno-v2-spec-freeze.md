@@ -1,0 +1,15 @@
+# TRESNO V2 — Finalisasi Spesifikasi & Payload (Spec Freeze v2.0)
+
+**Radio/PHY:** 433 MHz · **SF12 / 125 kHz / CR 4/5** · **TX 22 dBm** · CRC PHY aktif  
+**Payload:** String ASCII (Verbose/Compact) · `BEA`/`SOS`/`ACK`/`LKT` · SIG = CRC16-CCITT(FALSE)
+
+## Timing (Default)
+Beacon 15 s (±20%) · SOS retry 3 s (maks 30 s) · TTL 6–8 · Cache dedup 60 s (64 entri/SRC)
+
+## Contoh Payload + CRC (kanonik)
+```
+V2|T=BEA|P=0|SEQ=12AB|TTL=6|SRC=N12|ROLE=N|H=0|TS=1737690000|LAT=-7.60123|LON=110.41568|ALT=910|SPD=0.8|HDG=132|B=3.85|SIG=A091
+V2|T=SOS|P=1|SEQ=12AC|TTL=8|SRC=N12|H=0|TS=1737690123|LAT=-7.60150|LON=110.41610|B=3.50|MSG=HELP|SIG=1920
+V2|T=LKT|P=0|SEQ=01B0|TTL=8|SRC=N12|ROLE=N|H=0|TS=1737690456|LAT=-7.60180|LON=110.41650|ALT=915|B=3.82|PH=1:-104:7.8;2:-109:6.1;3:-111:5.0|DT=1:1.2;2:0.9;3:1.0|SIG=F94C
+2|B|0|01AF|6|N12|N|0|1737690000|-7.60123|110.41568|910|0.8|132|3.85|3C97
+```
